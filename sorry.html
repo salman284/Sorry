@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+    }
+    .heartbeat {
+      animation: heartbeat 1s infinite;
+    }
+  </style>
+</head>
+<body class="bg-pink-100 flex items-center justify-center min-h-screen p-4">
+
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="song.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md text-center">
+    <!-- Your Photo -->
+    <img src="us.jpg" alt="Us Together" class="rounded-xl shadow-md w-full mb-4" />
+    
+    <div class="text-red-500 text-6xl heartbeat mb-4">❤️</div>
+    
+    <!-- Personalized Message -->
+    <h1 class="text-2xl font-bold text-gray-800 mb-2">I'm so sorry, HER_NAME.</h1>
+    <p class="text-gray-600 mb-4">
+      I never meant to hurt you. You mean everything to me, and I hate knowing I made you sad.
+    </p>
+    <p class="text-pink-600 font-semibold text-lg">Please forgive me. I miss you so much.</p>
+    
+    <div class="mt-6">
+      <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full shadow-lg transition duration-300">
+        💌 Tap to Forgive Me
+      </a>
+    </div>
+  </div>
+</body>
+</html>
